@@ -1,6 +1,11 @@
 ﻿#include <iostream>
+#include <fstream>
+#include <ctime>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::srand(std::time(nullptr));
+    std::ofstream file("pic.txt");
+
+    file.close();
 }
